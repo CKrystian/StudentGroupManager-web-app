@@ -76,7 +76,7 @@ a:hover{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #004c64;
     overflow-x: hidden;
     transition: 0.5s;
     margin-top: 50px;
@@ -87,7 +87,7 @@ a:hover{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: white;
     display: block;
     transition: 0.3s;
 
@@ -116,7 +116,73 @@ a:hover{
 }
 .navbar{
     position: absolute;
+	background-color:#5869E3;
 }
 .well h1{
     padding-top: 300px;
+}
+
+/*main panel*/
+.news {
+	background-color:white;
+	width:25%;
+	height:300px;
+	margin-right:35px;
+	font-size:14px;
+	float:right;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.news h2{
+	font-size:16px;
+}
+.schedule{
+	background-color:white;
+	width:51.2%;
+	height:300px;
+	margin-left:260px;
+	font-size:14px;
+	float:left;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.schedule h2{
+	font-size:16px;
+}
+.last_marks{
+	background-color:white;
+	width:25%;
+	height:250px;
+	margin-left:260px;
+	margin-top:20px;
+	font-size:14px;
+	float:left;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.last_marks h2{
+	font-size:16px;
+}
+.tests{
+	background-color:white;
+	width:25%;
+	height:250px;
+	margin-right:35px;
+	margin-top:20px;
+	font-size:14px;
+	float:right;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tests h2{
+	font-size:16px;
+}
+.lists{
+	background-color:white;
+	width:25%;
+	height:250px;
+	margin-right:20px;
+	margin-top:20px;
+	font-size:14px;
+	float:right;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.lists h2{
+	font-size:16px;
 }
