@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="OSMP-Service">
+    <output-path>$PROJECT_DIR$/../OSMP-service-develop</output-path>
+    <root id="archive" name="OSMP-Service.war" />
+  </artifact>
+</component>
