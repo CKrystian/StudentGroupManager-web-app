@@ -1,3 +1,27 @@
-<div class="well" data-ng-controller="userController">
+<div class="usertable" data-ng-controller="userController">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        </tr>
+        <tr td ng-repeat="x in data">
+            <td>{{x.id}}</td>
+            <td>{{x.firstName}}</td>
+            <td>{{x.lastName}}</td>
+            <td>{{x.email}}</td>
+            <td ng-repeat="roles in x.roles">{{roles.role}}</td>
+            <td><button type="button" class="btn btn-danger">Delete</button></td>
+        </tr>
+        </tbody>
+    </table>
 
 </div>

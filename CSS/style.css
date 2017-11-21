@@ -186,3 +186,10 @@ a:hover{
 .lists h2{
 	font-size:16px;
 }
+.usertable{
+    margin: auto;
+    width:50%;
+    height:auto;
+    background-color: white;
+
+}
