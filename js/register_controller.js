@@ -5,9 +5,12 @@ angular.module('app').controller('registerController',
             $scope.register = function() {
                 var test = "nic";
 
-                registerService.register($scope.email, $scope.password, $scope.firstName, $scope.lastName).then(function (response) {
+                registerService.register($scope.email, $scope.firstName, $scope.lastName, $scope.password).then(function (response) {
                     $log.info(response);
-                    window.location.href = "index.html";
+                    //window.location.href = "index.html";
+                    $rootScope.message = "Rejestracja przebiegła pomyślnie. Na twój adres został wysłany link aktywacyjny. Po aktywacji będziesz mógł się zalogować";
+                    $rootScope.isSuccess = true;
+                    $location.path("/login");
                 });
             }
         }]);
