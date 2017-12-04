@@ -8,13 +8,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
     <script src="js/user_panel.js"></script>
+    <script src="js/users_controller.js"></script>
 
 </head>
 <body>
 <div class="navbar">
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <p class="navbar-text">OSMP</p>
-            <button type="button" class="btn btn-default navbar-btn pull-right">Wyloguj</button>
+            <button type="button" class="btn btn-default navbar-btn pull-right" data-ng-click="logout()">Wyloguj</button>
         </nav>
 </div>
 <div id="mySidenav" class="sidenav">

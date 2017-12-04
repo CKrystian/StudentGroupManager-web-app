@@ -10,18 +10,33 @@
     <script src="js/admin_panel.js"></script>
     <script src="js/users_controller.js"></script>
     <script src="js/userService.js"></script>
+    <script src="js/module_controller.js"></script>
+    <script src="js/moduleService.js"></script>
+    <script src="js/faculty_controller.js"></script>
+    <script src="js/facultyService.js"></script>
+    <script src="js/faculties_controller.js"></script>
+    <script src="js/facultiesService.js"></script>
+    <script src="js/login_controller.js"></script>
+    <script src="js/loginService.js"></script>
+    <script src="js/modules_controller.js"></script>
+    <script src="js/modulesService.js"></script>
 </head>
 <body>
 <div class="navbar">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <p class="navbar-text">OSMP</p>
-        <button type="button" class="btn btn-default navbar-btn pull-right">Wyloguj</button>
+        <button type="button" class="btn btn-default navbar-btn pull-right" data-ng-click="logout()">Wyloguj</button>
+
     </nav>
 </div>
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#users">Użytkownicy</a>
     <a href="#news">Aktualności</a>
+    <a href="#module">Dodaj moduł</a>
+    <a href="#faculty">Dodaj kierunek</a>
+    <a href="#faculties">Lista kierunków</a>
+    <a href="#modules">Lista przedmiotów</a>
 </div>
 
 <span style="font-size:40px;position:fixed;cursor:pointer" onclick="openNav()">&#10097; </span>

@@ -192,4 +192,9 @@ a:hover{
     height:auto;
     background-color: white;
 
+
+}
+.navbar-inverse {
+    background-color: #004c64;
+    border-color: #080808;
 }

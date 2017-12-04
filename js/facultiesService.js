@@ -1,12 +1,12 @@
 'use strict';
 
-angular.module('app').service('userService', function ($http, $q, $log) {
+angular.module('app').service('facultiesService', function ($http, $q, $log) {
 
-    var path = "http://localhost:9002/osmp-service/api/user/";
+    var path = "http://localhost:9002/osmp-service/api/faculty/";
     //var resource = $resource(path,{});
 
     return {
-        loadUsers: function(typ) {
+        loadFaculties: function(typ) {
             var test = path + typ;
             return $http({
                 method : 'GET',

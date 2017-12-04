@@ -7,4 +7,17 @@ app.config(function($routeProvider) {
         .when("/", {
             templateUrl : "main_panel.html"
         })
+        .when("/module", {
+            templateUrl : "module.html"
+        })
+        .when("/faculty", {
+            templateUrl : "faculty.html"
+        })
+        .when("/faculties", {
+            templateUrl : "faculties.html"
+        })
+        .when("/modules", {
+            templateUrl : "modules.html"
+        })
+
 });
