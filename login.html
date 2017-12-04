@@ -1,5 +1,8 @@
 <div ng-controller="LoginController">
 <div ng-show="error" class="alert alert-danger" >{{error}}</div>
+    <div ng-show="isSuccess" class="alert alert-success">
+        {{message}}
+    </div>
 <!--<form name="form" ng-submit="$ctrl.login()" role="form">-->
     <div class="form-group">
         <label for="username">Username</label>

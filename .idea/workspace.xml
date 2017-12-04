@@ -8,15 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d0967817-f5f5-473e-9fa2-f8a7c5cbd027" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/style.css" afterPath="$PROJECT_DIR$/CSS/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_panel.html" afterPath="$PROJECT_DIR$/admin_panel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin_panel.js" afterPath="$PROJECT_DIR$/js/admin_panel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/home_controller.js" afterPath="$PROJECT_DIR$/js/home_controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/login_controller.js" afterPath="$PROJECT_DIR$/js/login_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/userService.js" afterPath="$PROJECT_DIR$/js/userService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user_panel.html" afterPath="$PROJECT_DIR$/user_panel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users.html" afterPath="$PROJECT_DIR$/users.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/register_controller.js" afterPath="$PROJECT_DIR$/js/register_controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.html" afterPath="$PROJECT_DIR$/login.html" />
     </list>
     <ignored path="$PROJECT_DIR$/../OSMP-service-develop/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +25,8 @@
       <file leaf-file-name="admin_panel.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin_panel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="10" />
+            <state relative-caret-position="17">
+              <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
               <folding>
                 <element signature="e#1509#1516#1" expanded="true" />
               </folding>
@@ -117,7 +111,7 @@
     <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -543,15 +537,15 @@
       <workItem from="1511253627664" duration="5853000" />
       <workItem from="1511864796356" duration="12769000" />
       <workItem from="1512125736157" duration="1412000" />
-      <workItem from="1512389214668" duration="8091000" />
+      <workItem from="1512389214668" duration="8276000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40812000" />
+    <option name="totallyTimeSpent" value="40997000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -919,8 +913,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin_panel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="10" />
+        <state relative-caret-position="17">
+          <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
           <folding>
             <element signature="e#1509#1516#1" expanded="true" />
           </folding>
