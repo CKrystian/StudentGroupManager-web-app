@@ -16,7 +16,7 @@
             <td>{{x.id}}</td>
             <td>{{x.name}}</td>
             <td>{{x.faculty.code}} {{x.faculty.name}}</td>
-            <td><button type="button" class="btn btn-danger">Delete</button></td>
+            <td><button type="button" class="btn btn-danger" data-ng-click="delete(x.id)">Delete</button></td>
         </tr>
         </tbody>
     </table>

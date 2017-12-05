@@ -16,5 +16,14 @@ angular.module('app').controller('userController',
                 });
             }
 
+
+            $scope.delete = function (id) {
+                userService.delete('delete/', id).then(function (respnse) {
+                    $log.info(respnse);
+                }, function (error) {
+                    $log.error(error);
+
+                });
+            }
             this.loadAllUserList();
         }]);

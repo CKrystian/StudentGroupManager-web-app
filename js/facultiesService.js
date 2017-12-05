@@ -15,6 +15,15 @@ angular.module('app').service('facultiesService', function ($http, $q, $log) {
             }).then(function (response) {
                 return response.data;
             })
+        },
+        delete: function (typ,id) {
+            return $http({
+                method : 'DELETE',
+                url : path + typ + id,
+                responseType : "application/json"
+            }).then(function (response) {
+                return response.data;
+            })
         }
     }
 });

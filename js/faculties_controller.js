@@ -15,6 +15,14 @@ angular.module('app').controller('facultiesController',
 
                 });
             }
+            $scope.delete = function (id) {
+                facultiesService.delete('delete/', id).then(function (respnse) {
+                    $log.info(respnse);
+                }, function (error) {
+                    $log.error(error);
+
+                });
+            }
 
             this.loadAllFaculties();
         }]);

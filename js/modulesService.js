@@ -9,8 +9,17 @@ angular.module('app').service('modulesService', function ($http, $q, $log) {
         loadModules: function(typ) {
             var test = path + typ;
             return $http({
-                method : 'GET',
-                url : path + typ,
+                method: 'GET',
+                url: path + typ,
+                responseType: "application/json"
+            }).then(function (response) {
+                return response.data;
+            })
+        },
+        delete: function (typ,id) {
+            return $http({
+                method : 'DELETE',
+                url : path + typ + id,
                 responseType : "application/json"
             }).then(function (response) {
                 return response.data;

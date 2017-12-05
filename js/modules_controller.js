@@ -16,5 +16,15 @@ angular.module('app').controller('modulesController',
                 });
             }
 
+
+
+            $scope.delete = function (id) {
+                modulesService.delete('delete/', id).then(function (respnse) {
+                    $log.info(respnse);
+                }, function (error) {
+                    $log.error(error);
+
+                });
+            }
             this.loadAllModules();
         }]);
