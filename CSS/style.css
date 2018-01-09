@@ -71,8 +71,8 @@ a:hover{
 }
 .sidenav {
     height: 100%;
-    width: 0;
-    position: fixed;
+    width: 200px;
+    position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
@@ -86,7 +86,7 @@ a:hover{
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
     color: white;
     display: block;
     transition: 0.3s;
@@ -98,13 +98,6 @@ a:hover{
     text-decoration: none;
 }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
 #main {
     transition: margin-left .5s;
     padding: 16px;
@@ -116,7 +109,7 @@ a:hover{
 }
 .navbar{
     position: absolute;
-	background-color:#5869E3;
+	background-color: #004c64;
 }
 .well h1{
     padding-top: 300px;
@@ -194,7 +187,18 @@ a:hover{
 
 
 }
-.navbar-inverse {
-    background-color: #004c64;
-    border-color: #080808;
+.navbar span {
+    font-size: 25px;
+    top: 10px;
+    color: #FFFFFF;
+    font-family: "Arial Narrow";
+    margin-left: 20px;
 }
+.navbar button {
+    float: right;
+    margin-top: 10px;
+}
+
+
+.dialogdemoThemeInheritance .container {
+    text-align: center; }

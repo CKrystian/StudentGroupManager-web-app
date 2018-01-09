@@ -20,37 +20,38 @@
     <script src="js/loginService.js"></script>
     <script src="js/modules_controller.js"></script>
     <script src="js/modulesService.js"></script>
+    <script src="js/group_controller.js"></script>
+    <script src="js/groupService.js"></script>
+    <script src="js/usergroups_controller.js"></script>
+    <script src="js/userGroupService.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
 </head>
 <body>
 <div class="navbar">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <p class="navbar-text">OSMP</p>
-        <button type="button" class="btn btn-default navbar-btn pull-right" data-ng-click="logout()">Wyloguj</button>
+    <span>O S M P</span>
+    <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-primary" data-ng-click="add()">Log out</button>
+    <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-primary" data-ng-click="add()">Edit profile</button>
 
-    </nav>
 </div>
 <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#users">Użytkownicy</a>
-    <a href="#news">Aktualności</a>
-    <a href="#module">Dodaj moduł</a>
+    <a href="#">Aktualności</a>
     <a href="#faculty">Dodaj kierunek</a>
     <a href="#faculties">Lista kierunków</a>
+    <a href="#module">Dodaj moduł</a>
     <a href="#modules">Lista przedmiotów</a>
+    <a href="#groups">Dodaj grupę</a>
+    <a href="#usergroup">Przypisz uczniów</a>
 </div>
-
-<span style="font-size:40px;position:fixed;cursor:pointer" onclick="openNav()">&#10097; </span>
 
 <div data-ng-view></div>
 
-<script>
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-    }
 
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-</script>
+
 </body>
 </html>

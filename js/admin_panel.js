@@ -19,5 +19,10 @@ app.config(function($routeProvider) {
         .when("/modules", {
             templateUrl : "modules.html"
         })
-
+        .when("/groups", {
+            templateUrl : "groups.html"
+        })
+        .when("/usergroup", {
+            templateUrl : "usergroup.html"
+        })
 });

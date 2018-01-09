@@ -21,6 +21,7 @@ angular.module('app').controller('modulesController',
             $scope.delete = function (id) {
                 modulesService.delete('delete/', id).then(function (respnse) {
                     $log.info(respnse);
+                    window.location.href = "admin_panel.html#/modules";
                 }, function (error) {
                     $log.error(error);
 
