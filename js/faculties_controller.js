@@ -18,7 +18,7 @@ angular.module('app').controller('facultiesController',
             $scope.delete = function (id) {
                 facultiesService.delete('delete/', id).then(function (respnse) {
                     $log.info(respnse);
-                    window.location.href = "admin_panel.html#/faculties";
+                    window.location.href = "admin_panel.html#/faculties.html";
                 }, function (error) {
                     $log.error(error);
 

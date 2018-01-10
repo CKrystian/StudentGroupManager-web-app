@@ -6,7 +6,7 @@ angular.module('app').controller('facultyController',
 
                 facultyService.add($scope.code,$scope.name,$scope.type).then(function (response) {
                     $log.info(response);
-                    window.location.href = "admin_panel.html#/faculty";
+                    window.location.href = "admin_panel.html#/faculties";
                     alert('done');
                 });
             }

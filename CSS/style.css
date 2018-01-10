@@ -1,11 +1,15 @@
+.ng-scope{
+    margin-top: -20px;
+}
 body{
     margin:0;
+    padding: 0;
     background-image:url("images/background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height:700px;;
-
+    min-height:800px;
+    overflow: hidden;
 }
 h1{
     margin-top:5%;
@@ -27,43 +31,19 @@ h2{
     width: 28%;
     margin: auto;
 }
-nav{
-    display:inline-block;
-    margin: auto;
-    background-color: #f1fffd;
-    box-shadow:0 1px 1px #ccc;
-    border-radius:2px;
-    width: auto
+.view{
+    padding-top: 2%;
 }
-nav a{
-    width: 167px;
-    display:inline-block;
-    padding: 18px 42px;
-    color: #000545 !important;
-    font-weight:bold;
-    font-size:16px;
-    text-decoration:none !important;
-    line-height:1;
-    background-color:transparent;
-    -webkit-transition:background-color 0.25s;
-    -moz-transition:background-color 0.25s;
-    transition:background-color 0.25s;
+.tabs{
+    margin:0 auto;
+    align:center;
+}
+.nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+    width: 50%;
+    text-align: center;
 
-}
-nav a:first-child{
-    border-radius:2px 0 0 2px;
-}
-
-nav a:last-child{
-    border-radius:0 2px 2px 0;
-}
-nav.login .login,
-nav.sign .sign{
-    background-color:#5867E3;
-}
-a, a:visited {
-    outline:none;
-    color:#389dc1;
 }
 
 a:hover{
@@ -199,6 +179,7 @@ a:hover{
     margin-top: 10px;
 }
 
-
-.dialogdemoThemeInheritance .container {
-    text-align: center; }
+.navBardemoBasicUsage md-content .ext-content {
+    padding: 50px;
+    margin: 20px;
+    background-color: #FFF2E0; }

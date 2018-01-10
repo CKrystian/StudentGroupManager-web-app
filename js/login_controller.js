@@ -29,8 +29,7 @@ angular.module('app').controller('LoginController',
             $scope.logout = function(){
                 $cookies.remove('credentials');
                 $http.defaults.headers.common['Authorization'] = null;
-                alert("done")
-                window.location.href = "index.html";
+                window.location.href = "admin_panel.html#/module";
             }
 
             var isCurrentUserAdmin = function (user) {
