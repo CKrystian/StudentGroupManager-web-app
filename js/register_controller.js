@@ -13,4 +13,9 @@ angular.module('app').controller('registerController',
                     $location.path("/login");
                 });
             }
+            $scope.loading = function () {
+                document.getElementById("loader").style.display = "block";
+                document.getElementById("well-log").style.display = "none";
+
+            }
         }]);

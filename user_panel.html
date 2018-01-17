@@ -17,20 +17,46 @@
 </head>
 <body>
 <div class="navbar">
-    <span>O S M P</span>
-    <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-primary" data-ng-click="logout()">Log out</button>
-    <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-primary" data-ng-click="add()">Edit profile</button>
+    <span><a href="user_panel.html"> O S M P </a></span>
+    <button onclick="myFunction()" class="dropbtn">&#9776;</button>
+    <div id="myDropdown" class="dropdown-content">
+        <p data-ng-click="logout()">Edycja profilu</p>
+        <p data-ng-click="logout()">Wyloguj</p>
+    </div>
 
 </div>
 <div id="mySidenav" class="sidenav">
-    <a href="#main_panel">Panel główny</a>
-    <a href="#marks_panel">Oceny</a>
-    <a href="#">Sprawdziany</a>
-    <a href="#">Przedmioty</a>
-    <a href="#">Grupy</a>
+    <ul class="nav nav-pills nav-stacked">
+        <li><a href="#main_panel">Panel główny</a></li>
+        <li><a href="#marks_panel">Oceny</a></li>
+        <li><a href="#">Sprawdziany</a></li>
+        <li><a href="#">Przedmioty</a></li>
+        <li><a href="#">Grupy</a></li>
+    </ul>
 </div>
 
 <div data-ng-view></div>
 
+<script>
+
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
 </body>
 </html>

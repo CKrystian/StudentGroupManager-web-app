@@ -19,7 +19,7 @@ angular.module('app').controller('LoginController',
                     if(isCurrentUserAdmin(response)) {
                         window.location.href = "admin_panel.html";
                     } else {
-                        window.location.href = "user_panel.html";
+                        window.location.href = "user_panel.html#/main_panel";
                     }
                 }, function (error) {
                     $log.error(error);
@@ -31,7 +31,11 @@ angular.module('app').controller('LoginController',
                 $http.defaults.headers.common['Authorization'] = null;
                 window.location.href = "admin_panel.html#/module";
             }
+            $scope.loading = function () {
+                document.getElementById("loader").style.display = "block";
+                document.getElementById("well-log").style.display = "none";
 
+            }
             var isCurrentUserAdmin = function (user) {
 
                 for(var role in user.roles) {

@@ -3,56 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <title>OSMP</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
     <script src="js/admin_panel.js"></script>
     <script src="js/users_controller.js"></script>
-    <script src="js/userService.js"></script>
+    <script src="js/services/userService.js"></script>
     <script src="js/module_controller.js"></script>
-    <script src="js/moduleService.js"></script>
+    <script src="js/services/moduleService.js"></script>
     <script src="js/faculty_controller.js"></script>
-    <script src="js/facultyService.js"></script>
+    <script src="js/services/facultyService.js"></script>
     <script src="js/faculties_controller.js"></script>
-    <script src="js/facultiesService.js"></script>
+    <script src="js/services/facultiesService.js"></script>
     <script src="js/login_controller.js"></script>
-    <script src="js/loginService.js"></script>
+    <script src="js/services/loginService.js"></script>
     <script src="js/modules_controller.js"></script>
-    <script src="js/modulesService.js"></script>
+    <script src="js/services/modulesService.js"></script>
     <script src="js/group_controller.js"></script>
-    <script src="js/groupService.js"></script>
+    <script src="js/services/groupService.js"></script>
     <script src="js/usergroups_controller.js"></script>
-    <script src="js/userGroupService.js"></script>
+    <script src="js/services/userGroupService.js"></script>
+    <script src="js/admin_controller.js"></script>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
 
 </head>
-<body>
+<body ng-app="app" ng-cloak>
 <div class="navbar">
-    <span>O S M P</span>
-    <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-primary" data-ng-click="logout()">Log out</button>
-    <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-primary" data-ng-click="add()">Edit profile</button>
-
+    <span><a href="#/users">O S M P</a></span>
+    <button onclick="myFunction()" class="dropbtn">&#9776;</button>
+     <div id="myDropdown" class="dropdown-content">
+        <p data-ng-click="logout()">Edycja profilu</p>
+        <p data-ng-click="logout()">Wyloguj</p>
+     </div>
+</div>
 </div>
 <div id="mySidenav" class="sidenav">
-    <a href="#users">Użytkownicy</a>
-    <a href="#">Aktualności</a>
-    <a href="#faculty">Dodaj kierunek</a>
-    <a href="#faculties">Lista kierunków</a>
-    <a href="#module">Dodaj przedmiot</a>
-    <a href="#modules">Lista przedmiotów</a>
-    <a href="#groups">Dodaj grupę</a>
-    <a href="#usergroup">Przypisz uczniów</a>
+    <ul class="nav nav-pills nav-stacked">
+        <li><a href="#users" data-ng-click="active">Użytkownicy</a></li>
+        <li><a href="#">Aktualności</a></li>
+        <li><a href="#faculty">Dodaj kierunek</a></li>
+        <li><a href="#faculties">Lista kierunków</a></li>
+        <li><a href="#module">Dodaj przedmiot</a></li>
+        <li><a href="#modules">Lista przedmiotów</a></li>
+        <li><a href="#groups">Dodaj grupę</a></li>
+        <li><a href="#usergroup">Przypisz uczniów</a></li>
+    </ul>
 </div>
-
 <div data-ng-view></div>
+<!--<div ng-controller="DemoCtrl as demo" layout="column" ng-cloak>
+<div data-ng-view></div>
+<md-content class="md-padding" layout="column">
+    <div class="lock-size" layout="row" layout-align="center center">
+        <md-fab-speed-dial md-open="demo.isOpen" md-direction="{{demo.selectedDirection}}" ng-class="demo.selectedMode">
+            <md-fab-trigger>
+                <md-button aria-label="menu" class="md-fab md-warn">
+                    User
+                </md-button>
+            </md-fab-trigger>
 
+            <md-fab-actions>
+                <md-button aria-label="Twitter" class="md-fab md-raised md-mini">
+                    xxx
+                </md-button>
+                <md-button aria-label="Facebook" class="md-fab md-raised md-mini">
+                    sss
+                </md-button>
+                <md-button aria-label="Google Hangout" class="md-fab md-raised md-mini">
+                    was
+                </md-button>
+            </md-fab-actions>
+        </md-fab-speed-dial>
+    </div>
+</md-content>
+</div>-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
 
+<!-- Angular Material Library -->
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+<script>
 
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+</script>
 </body>
 </html>

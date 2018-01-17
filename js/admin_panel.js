@@ -1,4 +1,16 @@
-var app = angular.module("app", ["ngRoute"]);
+var app = angular.module("app", ["ngRoute", "ngMaterial"]);
+app.controller('DemoCtrl', function() {
+    this.topDirections = ['left', 'up'];
+    this.bottomDirections = ['down', 'right'];
+
+    this.isOpen = false;
+
+    this.availableModes = ['md-fling', 'md-scale'];
+    this.selectedMode = 'md-fling';
+
+    this.availableDirections = ['up', 'down', 'left', 'right'];
+    this.selectedDirection = 'down';
+});
 app.config(function($routeProvider) {
     $routeProvider
         .when("/users", {
