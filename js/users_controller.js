@@ -2,7 +2,7 @@ angular.module('app').controller('userController',
     ['$scope', 'userService',
         function ($scope, userService) {
 
-    $scope.data;
+            $scope.data;
 
             this.loadAllUserList = function() {
 

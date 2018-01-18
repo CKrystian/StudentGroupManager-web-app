@@ -29,7 +29,7 @@ angular.module('app').controller('LoginController',
             $scope.logout = function(){
                 $cookies.remove('credentials');
                 $http.defaults.headers.common['Authorization'] = null;
-                window.location.href = "admin_panel.html#/module";
+                window.location.href = "#index.html";
             }
             $scope.loading = function () {
                 document.getElementById("loader").style.display = "block";

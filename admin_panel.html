@@ -26,23 +26,25 @@
     <script src="js/usergroups_controller.js"></script>
     <script src="js/services/userGroupService.js"></script>
     <script src="js/admin_controller.js"></script>
-
-
+    <script src="js/addUser_Controller.js"></script>
+    <script src="js/services/addUser_service.js"></script>
+    <script src="js/profile_controller.js"></script>
 
 </head>
 <body ng-app="app" ng-cloak>
 <div class="navbar">
-    <span><a href="#/users">O S M P</a></span>
+    <span><a href="#/users"><img src="CSS/images/images.png"/>osmp</a></span>
     <button onclick="myFunction()" class="dropbtn">&#9776;</button>
      <div id="myDropdown" class="dropdown-content">
-        <p data-ng-click="logout()">Edycja profilu</p>
-        <p data-ng-click="logout()">Wyloguj</p>
+         <p><a href="#profile">Edycja profilu</a></p>
+         <p data-ng-click="logout()">Wyloguj</p>
      </div>
 </div>
 </div>
 <div id="mySidenav" class="sidenav">
     <ul class="nav nav-pills nav-stacked">
-        <li><a href="#users" data-ng-click="active">Użytkownicy</a></li>
+        <li><a href="#users">Użytkownicy</a></li>
+        <li><a href="#addUser">Dodaj użytkownika</a></li>
         <li><a href="#">Aktualności</a></li>
         <li><a href="#faculty">Dodaj kierunek</a></li>
         <li><a href="#faculties">Lista kierunków</a></li>
@@ -53,32 +55,7 @@
     </ul>
 </div>
 <div data-ng-view></div>
-<!--<div ng-controller="DemoCtrl as demo" layout="column" ng-cloak>
-<div data-ng-view></div>
-<md-content class="md-padding" layout="column">
-    <div class="lock-size" layout="row" layout-align="center center">
-        <md-fab-speed-dial md-open="demo.isOpen" md-direction="{{demo.selectedDirection}}" ng-class="demo.selectedMode">
-            <md-fab-trigger>
-                <md-button aria-label="menu" class="md-fab md-warn">
-                    User
-                </md-button>
-            </md-fab-trigger>
 
-            <md-fab-actions>
-                <md-button aria-label="Twitter" class="md-fab md-raised md-mini">
-                    xxx
-                </md-button>
-                <md-button aria-label="Facebook" class="md-fab md-raised md-mini">
-                    sss
-                </md-button>
-                <md-button aria-label="Google Hangout" class="md-fab md-raised md-mini">
-                    was
-                </md-button>
-            </md-fab-actions>
-        </md-fab-speed-dial>
-    </div>
-</md-content>
-</div>-->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>

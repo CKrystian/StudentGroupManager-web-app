@@ -6,6 +6,7 @@ angular.module('app').service('userGroupService', function ($http, $q, $log) {
 
 
     return {
+
         loadAllGroup: function(typ) {
             var test = path + typ;
             return $http({
@@ -15,6 +16,23 @@ angular.module('app').service('userGroupService', function ($http, $q, $log) {
             }).then(function (response) {
                 return response.data;
             })
+        },
+        add: function (groupId, userId) {
+            return $http(
+                {
+                    method: 'POST',
+                    url: path + groupId + '/assigneeUser/' + userId,
+                    responseType: "application/json",
+                    data:{
+                        groupId : groupId,
+                        userId : userId
+                    }
+                }
+            ).then(function (response) {
+                return response.data;
+                
+            })
+            
         }
     }
 });

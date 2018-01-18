@@ -10,5 +10,13 @@ angular.module('app').controller('groupController',
                     alert("done");
                 });
             }
+            $scope.show = function () {
 
+                modulesService.loadModules("all").then(function (response) {
+                    $scope.data = response;
+                })
+
+            }
+
+            $scope.show();
         }]);
