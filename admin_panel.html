@@ -31,7 +31,7 @@
     <script src="js/profile_controller.js"></script>
 
 </head>
-<body ng-app="app" ng-cloak>
+<body ng-app="app" >
 <div class="navbar">
     <span><a href="#/users"><img src="CSS/images/images.png"/>osmp</a></span>
     <button onclick="myFunction()" class="dropbtn">&#9776;</button>
@@ -39,21 +39,51 @@
          <p><a href="#profile">Edycja profilu</a></p>
          <p data-ng-click="logout()">Wyloguj</p>
      </div>
+
+
 </div>
+<div class="menu">
+<ol>
+    <li>Użytkownicy
+        <ul>
+            <li><a href="#users">Lista użytkowników</a></li>
+            <li><a href="#addUser">Dodaj</a></li>
+        </ul>
+    </li>
+    <li>Aktualności
+        <ul>
+            <li><a href="#">Aktualności</a></li>
+        </ul>
+    </li>
+    <li>Kierunki
+        <ul>
+            <li><a href="#faculty">Dodaj kierunek</a></li>
+            <li><a href="#faculties">Lista kierunków</a></li>
+        </ul>
+    </li>
+    <li>Przedmioty
+        <ul>
+            <li><a href="#module">Dodaj przedmiot</a></li>
+            <li><a href="#modules">Lista przedmiotów</a></li>
+        </ul>
+    </li>
+    <li>Grupy
+        <ul>
+            <li><a href="#groups">Dodaj grupę</a></li>
+            <li><a href="#usergroup">Przypisz uczniów</a></li>
+        </ul>
+    </li>
+
+</ol>
+
 </div>
-<div id="mySidenav" class="sidenav">
+<!--<div id="mySidenav" class="sidenav">
     <ul class="nav nav-pills nav-stacked">
         <li><a href="#users">Użytkownicy</a></li>
         <li><a href="#addUser">Dodaj użytkownika</a></li>
-        <li><a href="#">Aktualności</a></li>
-        <li><a href="#faculty">Dodaj kierunek</a></li>
-        <li><a href="#faculties">Lista kierunków</a></li>
-        <li><a href="#module">Dodaj przedmiot</a></li>
-        <li><a href="#modules">Lista przedmiotów</a></li>
-        <li><a href="#groups">Dodaj grupę</a></li>
-        <li><a href="#usergroup">Przypisz uczniów</a></li>
+
     </ul>
-</div>
+</div>-->
 <div data-ng-view></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>

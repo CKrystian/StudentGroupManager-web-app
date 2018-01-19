@@ -1,6 +1,21 @@
-<div class="well">
-    <p>Oceny</p>
-<h1></h1>
+<div class="usertable">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Przedmiot</th>
+            <th>Oceny </th>
+            <th>Ocena końcowa</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        </tr>
+        <tr ng-repeat="x in data">
+            <td>{{x.id}}</td>
+            <td>{{x.firstName}}</td>
+        </tr>
+        </tbody>
+    </table>
 
 </div>
 

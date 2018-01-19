@@ -24,6 +24,18 @@ angular.module('app').service('userService', function ($http, $q, $log) {
             }).then(function (response) {
                 return response.data;
             })
+        },
+        currentUser: function (id) {
+            return $http (
+                {
+                    method : 'GET',
+                    url : path + id,
+                    responseType : "application/json"
+                }
+            ).then(function (response) {
+                return response.data;
+            })
+            
         }
     }
 });
