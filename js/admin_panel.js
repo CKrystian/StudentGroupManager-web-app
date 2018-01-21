@@ -1,4 +1,4 @@
-var app = angular.module("app", ["ngRoute", "ngMaterial"]);
+var app = angular.module("app", ["ngRoute", "ngMaterial", "ngCookies"]);
 app.controller('DemoCtrl', function() {
     this.topDirections = ['left', 'up'];
     this.bottomDirections = ['down', 'right'];

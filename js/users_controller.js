@@ -1,8 +1,11 @@
 angular.module('app').controller('userController',
-    ['$scope', 'userService',
-        function ($scope, userService) {
+    ['$scope', '$cookies','userService',
+        function ($scope, $cookies, userService) {
 
             $scope.data;
+
+            var id = $cookies.get("userId");
+
 
             this.loadAllUserList = function() {
 
@@ -15,7 +18,7 @@ angular.module('app').controller('userController',
 
                 });
             }
-            $scope.currentUser = function (id) {
+            this.currentUser = function () {
                 userService.currentUser(id).then(function (response) {
                     $scope.current = response;
                     $log.info(response);
@@ -37,5 +40,5 @@ angular.module('app').controller('userController',
                 });
             }
             this.loadAllUserList();
-
+            this.currentUser();
         }]);

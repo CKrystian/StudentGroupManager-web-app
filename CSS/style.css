@@ -94,10 +94,7 @@ a:hover{
 
 }
 
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
+
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
@@ -131,34 +128,37 @@ a:hover{
     text-decoration: none;
 }
 
+.main{
+    margin: auto;
+    width: 70%;
+    border: 3px solid green;
+    height: 50%;
+    margin-top: 10%;
+}
+
 /*main panel*/
-.news {
+ .news {
     border-radius: 20px;
 	background-color:white;
 	width:25%;
-	height:300px;
-	margin-right:35px;
+	height:150px;
+    position: relative;
+    left: 75%;
 	font-size:14px;
-	float:right;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.news h2{
-	font-size:16px;
-}
+
 .schedule{
     border-radius: 20px;
 	background-color:white;
-	width:51.2%;
-	height:300px;
-	margin-left:260px;
+	width:70%;
+	height:150px;
 	font-size:14px;
-	float:left;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 10px;
+
 }
-.schedule h2{
-	font-size:16px;
-    border-radius: 20px;
-}
+
 .last_marks{
     border-radius: 20px;
 	background-color:white;
@@ -177,16 +177,10 @@ a:hover{
 .tests{
 	background-color:white;
 	width:25%;
-	height:250px;
-	margin-right:35px;
-	margin-top:20px;
+	height:150px;
 	font-size:14px;
-	float:right;
+
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 20px;
-}
-.tests h2{
-	font-size:16px;
     border-radius: 20px;
 }
 .lists{
@@ -401,4 +395,19 @@ ol > li:hover > ul {
     background-image: url("images/bg.jpg");
     height: 3.3%;
     margin-bottom: 8%;
+}
+.menu_user{
+
+    width: 100%;
+    background-image: url("images/bg.jpg");
+    padding: 10px;
+    height: 3.3%;
+    margin-top: -1.5%;
+    position: relative;
+}
+.menu_user ol{
+    float:left;
+    padding: 0;
+    margin-left: 32%;
+    margin-top: -1.5%;
 }

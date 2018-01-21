@@ -7,12 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0967817-f5f5-473e-9fa2-f8a7c5cbd027" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OSMP_Service_war_exploded/WEB-INF/classes/pl/osmp/groups/controller/GroupController.class" afterPath="$PROJECT_DIR$/out/artifacts/OSMP_Service_war_exploded/WEB-INF/classes/pl/osmp/groups/controller/GroupController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OSMP_Service_war_exploded/WEB-INF/classes/pl/osmp/groups/entity/ClassDate.class" afterPath="$PROJECT_DIR$/out/artifacts/OSMP_Service_war_exploded/WEB-INF/classes/pl/osmp/groups/entity/ClassDate.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OSMP_Service_war_exploded/WEB-INF/classes/pl/osmp/groups/entity/Group.class" afterPath="$PROJECT_DIR$/out/artifacts/OSMP_Service_war_exploded/WEB-INF/classes/pl/osmp/groups/entity/Group.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OSMP_Service_war_exploded/WEB-INF/classes/pl/osmp/groups/service/GroupService.class" afterPath="$PROJECT_DIR$/out/artifacts/OSMP_Service_war_exploded/WEB-INF/classes/pl/osmp/groups/service/GroupService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OSMP_Service_war_exploded/WEB-INF/classes/pl/osmp/users/controller/UserController.class" afterPath="$PROJECT_DIR$/out/artifacts/OSMP_Service_war_exploded/WEB-INF/classes/pl/osmp/users/controller/UserController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/style.css" afterPath="$PROJECT_DIR$/CSS/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_panel.html" afterPath="$PROJECT_DIR$/admin_panel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/services/userService.js" afterPath="$PROJECT_DIR$/js/services/userService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin_panel.js" afterPath="$PROJECT_DIR$/js/admin_panel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/users_controller.js" afterPath="$PROJECT_DIR$/js/users_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/marks_panel.html" afterPath="$PROJECT_DIR$/marks_panel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main_panel.html" afterPath="$PROJECT_DIR$/main_panel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user_panel.html" afterPath="$PROJECT_DIR$/user_panel.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users.html" afterPath="$PROJECT_DIR$/users.html" />
     </list>
     <ignored path="$PROJECT_DIR$/../OSMP-service-develop/target/" />
@@ -29,7 +36,27 @@
         <entry file="file://$PROJECT_DIR$/users.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="59" lean-forward="false" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="59" />
+              <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/services/userService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="31" column="36" lean-forward="false" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users_controller.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/users_controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -38,25 +65,19 @@
       <file leaf-file-name="admin_panel.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin_panel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+            <state relative-caret-position="-119">
+              <caret line="8" column="98" lean-forward="false" selection-start-line="8" selection-start-column="98" selection-end-line="8" selection-end-column="98" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CSS/style.css">
+      <file leaf-file-name="admin_panel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/admin_panel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="402" column="20" lean-forward="false" selection-start-line="402" selection-start-column="20" selection-end-line="402" selection-end-column="20" />
-              <folding>
-                <element signature="e#930#1195#0" expanded="false" />
-                <element signature="e#1208#1351#0" expanded="false" />
-                <element signature="e#1370#1420#0" expanded="false" />
-                <element signature="e#1439#1469#0" expanded="false" />
-                <element signature="e#1487#1491#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,6 +98,7 @@
       <find>wel</find>
       <find>new</find>
       <find>side</find>
+      <find>main</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -90,7 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/home_controller.js" />
         <option value="$PROJECT_DIR$/js/modules_controller" />
         <option value="$PROJECT_DIR$/js/moduleService.js" />
         <option value="$PROJECT_DIR$/modules_controller.js" />
@@ -104,9 +125,7 @@
         <option value="$PROJECT_DIR$/js/usergroupService.js" />
         <option value="$PROJECT_DIR$/js/faculty_controller.js" />
         <option value="$PROJECT_DIR$/js/faculties_controller.js" />
-        <option value="$PROJECT_DIR$/../OSMP-service-develop/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/../OSMP-service-develop/src/main/java/pl/osmp/groups/entity/ClassDate.java" />
-        <option value="$PROJECT_DIR$/main_panel.html" />
         <option value="$PROJECT_DIR$/js/timetable/timetablejs.css" />
         <option value="$PROJECT_DIR$/js/mainPanel_Controller.js" />
         <option value="$PROJECT_DIR$/js/demoController.js" />
@@ -121,12 +140,10 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/register_controller.js" />
         <option value="$PROJECT_DIR$/sign.html" />
-        <option value="$PROJECT_DIR$/user_panel.html" />
         <option value="$PROJECT_DIR$/js/group_controller.js" />
         <option value="$PROJECT_DIR$/js/addUser_Controller.js" />
         <option value="$PROJECT_DIR$/js/services/addUser_service.js" />
         <option value="$PROJECT_DIR$/addUser.html" />
-        <option value="$PROJECT_DIR$/js/admin_panel.js" />
         <option value="$PROJECT_DIR$/js/profile_controller.js" />
         <option value="$PROJECT_DIR$/profile.html" />
         <option value="$PROJECT_DIR$/js/services/userGroupService.js" />
@@ -135,12 +152,17 @@
         <option value="$PROJECT_DIR$/group_list.html" />
         <option value="$PROJECT_DIR$/js/groupList_controller.js" />
         <option value="$PROJECT_DIR$/marks_panel.html" />
-        <option value="$PROJECT_DIR$/js/services/userService.js" />
         <option value="$PROJECT_DIR$/js/login_controller.js" />
+        <option value="$PROJECT_DIR$/js/services/userService.js" />
         <option value="$PROJECT_DIR$/users.html" />
-        <option value="$PROJECT_DIR$/js/users_controller.js" />
-        <option value="$PROJECT_DIR$/admin_panel.html" />
+        <option value="$PROJECT_DIR$/user_panel.html" />
         <option value="$PROJECT_DIR$/CSS/style.css" />
+        <option value="$PROJECT_DIR$/main_panel.html" />
+        <option value="$PROJECT_DIR$/../OSMP-service-develop/src/main/java/pl/osmp/groups/service/GroupService.java" />
+        <option value="$PROJECT_DIR$/../OSMP-service-develop/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/js/admin_panel.js" />
+        <option value="$PROJECT_DIR$/admin_panel.html" />
+        <option value="$PROJECT_DIR$/js/users_controller.js" />
       </list>
     </option>
   </component>
@@ -184,8 +206,6 @@
     <panes>
       <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,34 +229,7 @@
               <item name="OSMP-service-develop" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSMP-web-application-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSMP-service-develop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="osmp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSMP-web-application-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSMP-service-develop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="osmp" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSMP-web-application-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSMP-service-develop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="osmp" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OSMP-web-application-master" type="b2602c69:ProjectViewProjectNode" />
@@ -267,6 +260,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -546,12 +541,15 @@
       <workItem from="1515669171277" duration="14890000" />
       <workItem from="1515697204539" duration="4628000" />
       <workItem from="1516221376354" duration="35893000" />
-      <workItem from="1516391871156" duration="9776000" />
+      <workItem from="1516391871156" duration="10597000" />
+      <workItem from="1516453399254" duration="4023000" />
+      <workItem from="1516471179799" duration="11470000" />
+      <workItem from="1516535293313" duration="861000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156008000" />
+    <option name="totallyTimeSpent" value="173183000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -569,7 +567,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5578447" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -604,20 +602,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../OSMP-service-develop/src/main/java/pl/osmp/groups/entity/ClassDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/OSMP_Service_war_exploded/WEB-INF/classes/pl/osmp/groups/entity/Group.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/timetable/timetablejs.css" />
     <entry file="file://$PROJECT_DIR$/js/mainPanel_Controller.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -626,23 +610,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/services/loginService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="2" column="71" lean-forward="false" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/demoController.js" />
-    <entry file="file://$PROJECT_DIR$/js/faculties_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="76" lean-forward="false" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/groups.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -731,7 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,34 +709,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/addUser_Controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="68" lean-forward="false" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/services/addUser_service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/register_controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="105" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/admin_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,13 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-86">
           <caret line="7" column="106" lean-forward="false" selection-start-line="7" selection-start-column="106" selection-end-line="7" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" column="130" lean-forward="false" selection-start-line="27" selection-start-column="130" selection-end-line="27" selection-end-column="130" />
         </state>
       </provider>
     </entry>
@@ -829,7 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -855,14 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user_panel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="75" lean-forward="false" selection-start-line="19" selection-start-column="75" selection-end-line="19" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/groupList_controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -874,13 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_panel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -903,7 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,7 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="41" column="28" lean-forward="false" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -919,38 +837,88 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="116" column="53" lean-forward="true" selection-start-line="116" selection-start-column="53" selection-end-line="116" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/services/loginService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="2" column="71" lean-forward="false" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/admin_panel.js">
+    <entry file="file://$PROJECT_DIR$/../OSMP-service-develop/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="43" column="40" lean-forward="true" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+        <state relative-caret-position="85">
+          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/login_controller.js">
+    <entry file="file://$PROJECT_DIR$/../OSMP-service-develop/src/main/java/pl/osmp/groups/service/GroupService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="29" column="45" lean-forward="false" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+        <state relative-caret-position="450">
+          <caret line="103" column="1" lean-forward="false" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_panel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1041">
+          <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_panel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="29" column="7" lean-forward="false" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="130" lean-forward="false" selection-start-line="27" selection-start-column="130" selection-end-line="27" selection-end-column="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/services/addUser_service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/services/userService.js">
+    <entry file="file://$PROJECT_DIR$/js/faculties_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="328">
+          <caret line="20" column="76" lean-forward="false" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/users_controller.js">
+    <entry file="file://$PROJECT_DIR$/js/addUser_Controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state relative-caret-position="136">
+          <caret line="8" column="68" lean-forward="false" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/admin_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -958,30 +926,48 @@
     <entry file="file://$PROJECT_DIR$/users.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="59" lean-forward="false" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="59" />
+          <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/login_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/admin_panel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin_panel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+        <state relative-caret-position="-119">
+          <caret line="8" column="98" lean-forward="false" selection-start-line="8" selection-start-column="98" selection-end-line="8" selection-end-column="98" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/style.css">
+    <entry file="file://$PROJECT_DIR$/js/services/userService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="402" column="20" lean-forward="false" selection-start-line="402" selection-start-column="20" selection-end-line="402" selection-end-column="20" />
-          <folding>
-            <element signature="e#930#1195#0" expanded="false" />
-            <element signature="e#1208#1351#0" expanded="false" />
-            <element signature="e#1370#1420#0" expanded="false" />
-            <element signature="e#1439#1469#0" expanded="false" />
-            <element signature="e#1487#1491#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="31" column="36" lean-forward="false" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/users_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>

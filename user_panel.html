@@ -17,22 +17,38 @@
 </head>
 <body>
 <div class="navbar">
-    <span><a href="user_panel.html"> <img src="CSS/images/images.png"/>osmp</span>
+    <span><a href="#/main_panel"> <img src="CSS/images/images.png"/>osmp</a></span>
     <button onclick="myFunction()" class="dropbtn">&#9776;</button>
     <div id="myDropdown" class="dropdown-content">
-        <p data-ng-click="logout()">Edycja profilu</p>
+        <p><a href="#profile">Edycja profilu</a></p>
         <p data-ng-click="logout()">Wyloguj</p>
     </div>
 
 </div>
-<div id="mySidenav" class="sidenav">
-    <ul class="nav nav-pills nav-stacked">
-        <li><a href="#main_panel">Panel główny</a></li>
-        <li><a href="#marks_panel">Oceny</a></li>
-        <li><a href="#">Sprawdziany</a></li>
-        <li><a href="#">Przedmioty</a></li>
-        <li><a href="#">Grupy</a></li>
-    </ul>
+
+<div class="menu_user">
+    <ol>
+        <li>Przedmioty
+            <ul>
+                <li><a href="#">Oceny</a></li>
+                <li><a href="#">Lista przedmiotów</a></li>
+            </ul>
+        </li>
+        <li>Sprawdziany
+            <ul>
+                <li><a href="#">Coś tam</a></li>
+                <li><a href="#">Sprawdziany</a></li>
+            </ul>
+        </li>
+        <li>Plan zajęć
+            <ul>
+                <li><a href="#">Plan</a></li>
+                <li><a href="#">Lista grup</a></li>
+            </ul>
+        </li>
+
+    </ol>
+
 </div>
 
 <div data-ng-view></div>
