@@ -12,7 +12,7 @@ angular.module('app').controller('LoginController',
                 loginService.login($scope.username,$scope.password).then(function (response) {
                     $log.info(response);
                     var authdata = btoa($scope.username + ":" + $scope.password);
-                    $cookies.put('userId',response.id);
+                    $cookies.put('id',response.id);
                     $cookies.put('credentials',authdata);
 
                     delete $rootScope.message;

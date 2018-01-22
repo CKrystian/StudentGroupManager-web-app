@@ -1,0 +1,81 @@
+<div data-ng-controller="classDatesController as ctrl">
+    <div class="well">
+        <form name="form">
+            <h2>Dodaj terminy zajęć </h2>
+            <div class="form-group">
+            <div layout="row">
+                <div flex>
+                    <label>Grupa</label>
+                    <md-select ng-model="ctrl.userGroup" required="true">
+                        <md-option ng-repeat="group in ctrl.userGroups" ng-value="group.id" ng-disabled="$index === 1" >
+                            {{group.name}}
+                        </md-option>
+                    </md-select>
+                </div>
+            </div>
+                <label>Początek zajęć</label>
+                <div layout="row">
+
+                <div flex>
+                        <md-datepicker ng-model="ctrl.classDateDateStart" md-placeholder="Wybierz datę" ng-required="true"></md-datepicker>
+                </div>
+                </div>
+                <div layout="row">
+
+                <div flex>
+                        <input type="time" id="startTime" name="input" ng-model="ctrl.classDateTimeStart.value"
+                               placeholder="HH:mm:ss" required/>
+                </div>
+                </div>
+                <div layout="row">
+                    <label>Koniec zajęć</label>
+                    <div layout="row">
+                        <div flex>
+                            <md-datepicker ng-model="ctrl.classDateDateEnd" md-placeholder="Wybierz datę" ng-required="true"></md-datepicker>
+                        </div>
+                    </div>
+                </div>
+                    <div layout="row">
+
+                        <div flex>
+                            <input type="time" id="endTime" name="input" ng-model="ctrl.classDateTimeEnd.value"
+                                   placeholder="HH:mm:ss" required/>
+                        </div>
+                    </div>
+                    <div layout="row">
+                <label>Sala</label>
+                <input ng-model="ctrl.classRoom" required/>
+                </div>
+
+            </div>
+        </form>
+        <button ng-click="ctrl.addClassDateToList()">Dodaj</button>
+
+        <h3>Dodane zajęcia:</h3>
+            <table class="table">
+
+                <thead>
+                <tr>
+                    <th>Początek</th>
+                    <th>Koniec</th>
+                    <!--  <th>Studenci</th>-->
+                    <th>Sala</th>
+                    <th>Akcja</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                </tr>
+                <tr ng-repeat="classDate in ctrl.classDates">
+                    <td>{{classDate.startDate}}</td>
+                    <td> {{classDate.endDate}} </td>
+                    <td>{{classDate.classRoom}}</td>
+                    <!-- <td ng-repeat="member in x.members">{{member.}}</td>-->
+                    <td><button type="button" class="btn btn-danger" data-ng-click="delete(x.id)">Delete</button></td>
+                </tr>
+                </tbody>
+            </table>
+
+        <button ng-click="ctrl.saveClassDates(ctrl.classDates)">Zapisz</button>
+    </div>
+</div>
