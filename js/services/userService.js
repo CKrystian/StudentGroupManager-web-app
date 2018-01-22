@@ -36,6 +36,25 @@ angular.module('app').service('userService', function ($http, $q, $log) {
                 return response.data;
             })
             
+        },
+        editUser: function (id, email,firstName, lastName) {
+            return  $http(
+                {
+                    method: 'POST',
+                    url : path + 'update',
+                    responseType : "application/json",
+                    data : {
+                        id : id,
+                        email : email,
+                        firstName: firstName,
+                        lastName: lastName
+                    }
+                }
+            ).then(function (response) {
+                return response.data;
+
+            })
+
         }
     }
 });

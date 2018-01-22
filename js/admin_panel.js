@@ -43,4 +43,8 @@ app.config(function($routeProvider) {
         .when("/profile", {
             templateUrl : "profile.html"
         })
+        .when("/group_list", {
+            templateUrl : "group_list.html"
+        })
+
 });

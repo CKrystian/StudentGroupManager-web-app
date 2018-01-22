@@ -24,6 +24,17 @@ angular.module('app').service('facultiesService', function ($http, $q, $log) {
             }).then(function (response) {
                 return response.data;
             })
+        },
+        edit: function (typ) {
+            return $http({
+                method : 'POST',
+                url : path + typ,
+                responseType : "application/json"
+            }).then(function (response) {
+                return response.data;
+
+            })
+
         }
     }
 });

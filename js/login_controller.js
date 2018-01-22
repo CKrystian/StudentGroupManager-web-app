@@ -7,20 +7,24 @@ angular.module('app').controller('LoginController',
 
 
             $scope.login = function() {
-                var test = "nic";
+
 
                 loginService.login($scope.username,$scope.password).then(function (response) {
                     $log.info(response);
                     var authdata = btoa($scope.username + ":" + $scope.password);
+                    $cookies.put('userId',response.id);
                     $cookies.put('credentials',authdata);
+
                     delete $rootScope.message;
                     $http.defaults.headers.common['Authorization'] = 'Basic ' + authdata;
                     var testt = isCurrentUserAdmin(response);
+                    $scope.loading();
                     if(isCurrentUserAdmin(response)) {
-                        window.location.href = "admin_panel.html";
+                        window.location.href = "admin_panel.html#/users";
                     } else {
-                        window.location.href = "user_panel.html#/main_panel";
+                        window.location.href = "admin_panel.html#/users";
                     }
+
                 }, function (error) {
                     $log.error(error);
                     alert("Niepoprawne dane logowania!")

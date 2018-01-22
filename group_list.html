@@ -4,10 +4,8 @@
         <thead>
         <tr>
             <th>Id</th>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Email</th>
-            <th>Role</th>
+            <th>Nazwa</th>
+          <!--  <th>Studenci</th>-->
             <th>Delete</th>
             <th>Edit</th>
         </tr>
@@ -17,12 +15,10 @@
         </tr>
         <tr ng-repeat="x in data">
             <td>{{x.id}}</td>
-            <td>{{x.firstName}}</td>
-            <td>{{x.lastName}}</td>
-            <td>{{x.email}}</td>
-            <td ng-repeat="roles in x.roles">{{roles.role}}</td>
+            <td>{{x.name}}</td>
+           <!-- <td ng-repeat="member in x.members">{{member.}}</td>-->
             <td><button type="button" class="btn btn-danger" data-ng-click="delete(x.id)">Delete</button></td>
-            <td><button type="button" class="btn-primary" >Edit</button> </td>
+            <td><button type="button" class="btn btn-primary" >Edit</button> </td>
         </tr>
         </tbody>
     </table>

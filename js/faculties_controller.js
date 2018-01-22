@@ -1,6 +1,6 @@
 angular.module('app').controller('facultiesController',
-    ['$scope', 'facultiesService',
-        function ($scope, facultiesService) {
+    ['$scope', 'facultiesService','$mdDialog',
+        function ($scope, facultiesService, $mdDialog) {
 
             $scope.data;
 
@@ -15,6 +15,21 @@ angular.module('app').controller('facultiesController',
 
                 });
             }
+            $scope.showConfirm = function(ev,id) {
+                var confirm = $mdDialog.confirm()
+                    .title('Czy chcesz wybrany element?')
+                    .textContent('Wybrany kierunek studiów zostanie usunięty')
+                    .ariaLabel('Lucky day')
+                    .targetEvent(ev)
+                    .ok('Tak')
+                    .cancel('Nie');
+
+                $mdDialog.show(confirm).then(function() {
+                    $scope.delete(id);
+                }, function() {
+                    $scope.status = 'You decided to keep your debt.';
+                });
+            };
             $scope.delete = function (id) {
                 facultiesService.delete('delete/', id).then(function (respnse) {
                     $log.info(respnse);
@@ -24,6 +39,15 @@ angular.module('app').controller('facultiesController',
 
                 });
             }
+            $scope.edit = function () {
+                facultiesService.edit('update').then(function (response) {
+                    $log.info(response);
 
+                }, function (error) {
+                    $log.info(error);
+
+                })
+
+            }
             this.loadAllFaculties();
         }]);

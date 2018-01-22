@@ -1,4 +1,7 @@
+
 <div class="usertable" data-ng-controller="userController" >
+    <input type="text" name="search" ng-model="searchKeyword">
+
     <table class="table">
         <p> User name : {{current.email}}</p>
 
@@ -18,7 +21,7 @@
         <tbody>
         <tr>
         </tr>
-        <tr ng-repeat="x in data">
+        <tr ng-repeat="x in data | filter: searchKeyword">
             <td>{{x.id}}</td>
             <td>{{x.firstName}}</td>
             <td>{{x.lastName}}</td>

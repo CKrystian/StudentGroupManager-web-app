@@ -30,10 +30,13 @@
     <script src="js/addUser_Controller.js"></script>
     <script src="js/services/addUser_service.js"></script>
     <script src="js/profile_controller.js"></script>
+    <script src="js/groupList_controller.js"></script>
+    <script src="js/menu_controller.js"></script>
+    <script src="js/services/menuService.js"></script>
 
 </head>
 <body ng-app="app" >
-<div class="navbar">
+<div class="navbar" data-ng-controller="adminController">
     <span><a href="#/users"><img src="CSS/images/images.png"/>osmp</a></span>
     <button onclick="myFunction()" class="dropbtn">&#9776;</button>
      <div id="myDropdown" class="dropdown-content">
@@ -43,7 +46,17 @@
 
 
 </div>
-<div class="menu">
+<div class="menu" data-ng-controller="menuController">
+    <ol ng-repeat="x in data">
+        <li>{{x.title}}
+            <ul>
+                <li ng-repeat="menu in x.menuOptions"><a href="{{menu.url}}">{{menu.title}}</a></li>
+            </ul>
+        </li>
+    </ol>
+</div>
+
+    <!--
 <ol>
     <li>Użytkownicy
         <ul>
@@ -72,12 +85,13 @@
         <ul>
             <li><a href="#groups">Dodaj grupę</a></li>
             <li><a href="#usergroup">Przypisz uczniów</a></li>
+            <li><a href="#group_list">Lista grup</a></li>
         </ul>
     </li>
 
 </ol>
 
-</div>
+</div>-->
 
 <div data-ng-view></div>
 

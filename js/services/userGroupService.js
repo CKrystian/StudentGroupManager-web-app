@@ -33,6 +33,20 @@ angular.module('app').service('userGroupService', function ($http, $q, $log) {
                 
             })
             
+        },
+        delete : function (typ,id) {
+            return $http(
+                {
+                    method : 'DELETE',
+                    url : path + typ + id,
+                    responseType : "application/json"
+
+                }
+            ).then(function (response) {
+                return response.data;
+
+            })
+
         }
     }
 });
