@@ -1,0 +1,40 @@
+<div data-ng-controller="classDatesDetailsController as ctrl">
+    <div class="well">
+        <h4>Przedmiot: {{ctrl.classDate.group.module.name}}</h4>
+        <h4>Grupa: {{ctrl.classDate.group.name}}</h4>
+        <h4>Początek zajęć: {{ctrl.classDate.startDate}}</h4>
+        <h4>Koniec zajęć: {{ctrl.classDate.endDate}}</h4>
+        <h4>Lista studentów</h4>
+
+            <div class="searchbar">
+                <label>Szukaj</label>
+                <input type="text" name="search" ng-model="searchKeyword">
+            </div>
+            <div class="tables">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Imię</th>
+                        <th>Nazwisko</th>
+                        <th>E-Mail</th>
+                        <th>Dodaj obecność</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    </tr>
+                    <tr ng-repeat="x in ctrl.classDate.group.members | filter: searchKeyword">
+                        <td>{{x.firstName}}</td>
+                        <td>{{x.lastName}}</td>
+                        <td>{{x.email}}</td>
+                        <td>
+                            <md-button ng-if="x.isPresent" class="md-warn md-raised" ng-click="self.removePresence(x)">Usuń obecność</md-button>
+                            <md-button ng-if="!x.isPresent" class="md-primary md-raised" ng-click="self.addPresence(x)">Dodaj obecność</md-button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</div>

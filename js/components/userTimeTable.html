@@ -1,0 +1,18 @@
+
+       <h2>Plan zajęć</h2>
+        <br/>
+       <br/>
+        <mwl-calendar
+                view="calendarView"
+                view-date="viewDate"
+                events="events"
+                on-event-click="vm.eventClicked(calendarEvent)"
+                on-event-times-changed="vm.eventTimesChanged(calendarEvent); calendarEvent.startsAt = calendarNewEventStart; calendarEvent.endsAt = calendarNewEventEnd"
+                cell-is-open="vm.cellIsOpen"
+                day-view-start="06:00"
+                day-view-end="22:59"
+                day-view-split="30"
+                cell-modifier="vm.modifyCell(calendarCell)"
+                cell-auto-open-disabled="true"
+                on-timespan-click="vm.timespanClicked(calendarDate, calendarCell)">
+        </mwl-calendar>

@@ -6,6 +6,7 @@ angular.module('app').controller('classDatesController',
 
             self.classDates = [];
             self.userGroups = [];
+            self.events = [];
 
             userGroupService.getUserGroups($cookies.get("userId")).then(function (response) {
                 self.userGroups = response;
@@ -20,13 +21,13 @@ angular.module('app').controller('classDatesController',
             };
 
             self.addClassDateToList = function () {
-                var startDate = moment(self.classDateDateStart).format("DD-MM-YYYY");
-                var startTime = moment(self.classDateTimeStart.value).format("HH:mm:SS");
-                var endDate = moment(self.classDateDateEnd).format("DD-MM-YYYY");
-                var endTime = moment(self.classDateTimeEnd.value).format("HH:mm:SS");
+                var startDate = moment(self.classDateDateStart);
+                var startTime = moment(self.classDateTimeStart.value).utc();
+                var endDate = moment(self.classDateDateEnd);
+                var endTime = moment(self.classDateTimeEnd.value).utc();
                     var classDate = {
-                        startDate : startDate + " " + startTime,
-                        endDate : endDate + " " + endTime,
+                        startDate : startDate.set({'hour' : startTime.get('hour'), 'minute' : startTime.get('minute')}),
+                        endDate : endDate.set({'hour' : endTime.get('hour'), 'minute' : endTime.get('minute')}),
                         classRoom : self.classRoom,
                         group : {
                             id: self.userGroup

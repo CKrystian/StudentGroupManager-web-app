@@ -52,5 +52,12 @@ app.config(function($routeProvider) {
         .when("edit_faculty", {
             templateUrl : "edit_faculty.html"
         })
+        .when("/class_dates/", {
+            templateUrl: "userClassDates.html"
+        })
+        .when("/class_dates/:id", {
+            templateUrl: "classDateDetails.html"
+        })
+    ;
 
 });

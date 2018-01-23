@@ -32,6 +32,7 @@ h2{
     width: 48%;
     margin: auto;
     margin-top: 5%;
+    height: 1000px;
 }
 #well-log{
     width: 28%;
@@ -201,7 +202,7 @@ a:hover{
 .usertable{
     margin: auto;
     width:60%;
-    height:550px;
+    height:1550px;
     background-color: white;
     margin-top: 10%;
     border-radius: 20px;
