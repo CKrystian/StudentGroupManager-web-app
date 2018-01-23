@@ -3,6 +3,8 @@
 angular.module('app').service('userGroupService', function ($http, $q, $log) {
 
     var path = "http://localhost:9002/osmp-service/api/groups/";
+    var user_path = "http://localhost:9002/osmp-service/api/user/";
+   // var classDate_path = "http://localhost:9002/osmp-service/api/groups/addClassDate"
 
 
     return {
@@ -47,6 +49,34 @@ angular.module('app').service('userGroupService', function ($http, $q, $log) {
 
             })
 
+        },
+
+        getUserGroups : function (id) {
+            return $http(
+                {
+                    method : 'GET',
+                    url : user_path + id + "/groups",
+                    responseType : "application/json"
+
+                }
+            ).then(function (response) {
+                return response.data;
+
+            })
+        },
+
+        saveClassDates : function (classDates) {
+            return $http(
+                {
+                    method: 'POST',
+                    url: path + "addClassDate",
+                    responseType: "application/json",
+                    data:classDates
+                }
+            ).then(function (response) {
+                return response.data;
+
+            })
         }
     }
 });
