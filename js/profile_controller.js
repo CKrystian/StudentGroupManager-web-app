@@ -18,7 +18,7 @@ angular.module('app').controller('profileController',
                 userService.editUser($scope.user.id,$scope.user.email,$scope.firstName, $scope.lastName).then(function (resp) {
                     $log.info(resp);
                     alert('done');
-                    window.location.href = "admin_panel.html#/profile";
+                    window.location.href = "admin_panel.html#/profile.html";
 
 
                 })

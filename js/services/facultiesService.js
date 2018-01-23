@@ -25,11 +25,17 @@ angular.module('app').service('facultiesService', function ($http, $q, $log) {
                 return response.data;
             })
         },
-        edit: function (typ) {
+        edit: function (id, code, name, type) {
             return $http({
                 method : 'POST',
-                url : path + typ,
-                responseType : "application/json"
+                url : path + 'update',
+                responseType : "application/json",
+                data : {
+                    id : id,
+                    code : code,
+                    name : name,
+                    type : type
+                }
             }).then(function (response) {
                 return response.data;
 

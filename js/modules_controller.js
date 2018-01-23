@@ -1,6 +1,6 @@
 angular.module('app').controller('modulesController',
-    ['$scope', 'modulesService',
-        function ($scope, modulesService) {
+    ['$scope', 'modulesService', '$mdDialog',
+        function ($scope, modulesService, $mdDialog) {
 
             $scope.data;
 
@@ -15,6 +15,54 @@ angular.module('app').controller('modulesController',
 
                 });
             }
+            $scope.edit = function () {
+                modulesService.edit($scope.id,$scope.name,$scope.faculty_id).then(function (response) {
+                    $scope.data = response;
+                    $log.info(response);
+                    
+                }), function (error) {
+                    $log.info(error);
+
+                }
+                
+            }
+            $scope.showConfirm = function(ev,id) {
+                var confirm = $mdDialog.confirm()
+                    .title('Czy chcesz wybrany element?')
+                    .textContent('Wybrany przedmiot zostanie usunięty')
+                    .ariaLabel('Lucky day')
+                    .targetEvent(ev)
+                    .ok('Tak')
+                    .cancel('Nie');
+
+                $mdDialog.show(confirm).then(function() {
+                    $scope.delete(id);
+                }, function() {
+                    $scope.status = 'You decided to keep your debt.';
+                });
+            };
+            $scope.showPrompt = function(ev,id, name, faculty_id) {
+
+                var confirm = $mdDialog.prompt()
+                    .title('Edytuj przedmiot')
+                    .textContent('')
+                    .placeholder('Nazwa przedmiotu')
+                    .ariaLabel('Dog name')
+                    .initialValue('')
+                    .targetEvent(ev)
+                    .ok('Potwierdź')
+                    .cancel('Cofnij');
+
+                $mdDialog.show(confirm).then(function(result) {
+                    $scope.name = result;
+                    $scope.id = id;
+
+                    $scope.faculty.id = faculty_id;
+                    $scope.edit();
+                }, function() {
+                    $scope.status = 'You didn\'t name your dog.';
+                });
+            };
 
 
 

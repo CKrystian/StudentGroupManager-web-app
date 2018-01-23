@@ -46,5 +46,8 @@ app.config(function($routeProvider) {
         .when("/group_list", {
             templateUrl : "group_list.html"
         })
+        .when("edit_faculty", {
+            templateUrl : "edit_faculty.html"
+        })
 
 });

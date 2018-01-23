@@ -12,8 +12,8 @@
             <th>Kod</th>
             <th>Nazwa</th>
             <th>Typ</th>
-            <th>Delete</th>
-            <th>Edit</th>
+            <th>Usuń</th>
+            <th>Edytuj</th>
         </tr>
         </thead>
         <tbody>
@@ -25,10 +25,12 @@
             <td>{{x.name}}</td>
             <td>{{x.type}}</td>
             <td><md-button class="md-warn md-raised" ng-click="showConfirm($event, x.id)" >
-                Delete
-            </md-button>
+                Usuń
+            </md-button></td>
 
-            <td><a href="#/profile.html" class="btn btn-primary">Edit</a></td>
+            <td><md-button class="md-primary md-raised" data-ng-click="showPrompt($event, x.id, x.code, x.type)">
+                Edytuj
+            </md-button></td>
         </tr>
         </tbody>
     </table>
