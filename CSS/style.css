@@ -29,7 +29,7 @@ h2{
 }
 
 .well{
-    width: 28%;
+    width: 48%;
     margin: auto;
     margin-top: 5%;
 }
@@ -200,12 +200,12 @@ a:hover{
 }
 .usertable{
     margin: auto;
-    width:50%;
-    height:500px;
+    width:60%;
+    height:550px;
     background-color: white;
-    margin-top: 7%;
+    margin-top: 10%;
     border-radius: 20px;
-    padding-top: 20px;
+    padding-top: 25px;
 
 }
 .tables{
