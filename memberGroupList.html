@@ -1,0 +1,21 @@
+<div class="usertable" data-ng-controller="memberController">
+    <h2>{{}}</h2>
+    <div class="tables">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            </tr>
+            <tr ng-repeat="x in data">
+                <td>{{x.firstName}}</td>
+                <td>{{x.lastName}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

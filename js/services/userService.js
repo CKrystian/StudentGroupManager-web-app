@@ -1,9 +1,10 @@
 'use strict';
 
-angular.module('app').service('userService', function ($http, $q, $log) {
+angular.module('app').service('userService', function ($http, $q, $log, $cookies) {
 
     var path = "http://localhost:9002/osmp-service/api/user/";
     //var resource = $resource(path,{});
+    $http.defaults.headers.common['Authorization'] = $cookies.get('credentials');
 
     return {
         loadUsers: function(typ) {

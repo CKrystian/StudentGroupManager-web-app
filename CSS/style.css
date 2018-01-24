@@ -8,8 +8,12 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height:900px;
+    height:auto;
+    min-height: 1000px;
  // overflow: hidden;
+}
+.index{
+    height: 650px;
 }
 h1{
     margin-top:5%;
@@ -27,12 +31,17 @@ h2{
     font-family:Sans-Serif;
 
 }
+.h2, h2 {
+    font-size: 30px;
+    padding-top: 10px;
+}
 
 .well{
     width: 48%;
     margin: auto;
     margin-top: 5%;
-    height: 1000px;
+    height: auto;
+    min-height: 700px;
 }
 #well-log{
     width: 28%;
@@ -202,7 +211,7 @@ a:hover{
 .usertable{
     margin: auto;
     width:60%;
-    height:1550px;
+    height:650px;
     background-color: white;
     margin-top: 10%;
     border-radius: 20px;
@@ -211,7 +220,7 @@ a:hover{
 }
 .tables{
     overflow: scroll;
-    height:350px;
+    height:450px;
 }
 
 .navbar span {
@@ -425,7 +434,7 @@ ol > li:hover > ul {
     margin-top: -1.5%;
 }
 .searchbar{
-    margin-left: 30%;
+    margin-left: 35%;
     padding-bottom: 5%;
 }
 

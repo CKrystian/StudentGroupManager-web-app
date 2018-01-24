@@ -1,11 +1,11 @@
-<div data-ng-controller="userGroupController" class="container">
+<div data-ng-controller="userGroupController" >
     <div class="well">
         <form name="form">
         <h2>Przypisz użytkowników do grup</h2>
         <div class="form-group">
             <md-input-container class="md-block" >
                 <label>Grupa</label>
-                <md-select  ng-model="groupId" name="select">
+                <md-select  ng-model="groupId" name="select" required />
                     <md-option ng-repeat="group in groups" value="{{group.id}}"> {{group.name}}</md-option>
                 </md-select>
                 <div ng-messages="form-group.select.$error">
@@ -17,7 +17,7 @@
         <div class="form-group">
             <md-input-container class="md-block" >
                 <label>Student</label>
-                <md-select ng-model="userId" name="select2">
+                <md-select ng-model="userId" name="select2" required />
                     <md-option ng-repeat="user in users" value="{{user.id}}"> {{user.firstName}} {{user.lastName}}</md-option>
                 </md-select>
                 <div ng-messages="form-group.select2.$error">
@@ -29,7 +29,7 @@
 
         </div>
         <div class="form-actions">
-            <md-button class="md-raised md-primary" ng-disabled="form.$invalid"  data-ng-click="add()">Dodaj</md-button>
+            <md-button class="md-raised md-primary" ng-disabled="form.$invalid || dataLoading"  data-ng-click="add()">Dodaj</md-button>
             <img ng-if="dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="/>
         </div>
         </form>

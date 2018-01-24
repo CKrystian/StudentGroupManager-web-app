@@ -4,7 +4,7 @@ angular.module('app').controller('userController',
 
             $scope.data;
 
-            var id = $cookies.get('userId');
+            var id = $cookies.get('id');
 
 
             this.loadAllUserList = function() {

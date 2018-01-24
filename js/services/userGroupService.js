@@ -8,6 +8,8 @@ angular.module('app').service('userGroupService', function ($http, $q, $log) {
     var presence_path = "http://localhost:9002/osmp-service/api/groups/presence/";
 
 
+    var ex_path = "http://localhost:9002/osmp-service/api/examines/";
+
     return {
 
         loadAllGroup: function(typ) {
@@ -52,6 +54,26 @@ angular.module('app').service('userGroupService', function ($http, $q, $log) {
 
         },
 
+
+        edit: function (id, name, module) {
+            return $http({
+                method : 'POST',
+                url : path + 'update',
+                responseType : "application/json",
+                data : {
+                    id : id,
+                    name : name,
+                    module : {
+                        id:parseInt(module)
+                    }
+                }
+            }).then(function (response) {
+                return response.data;
+
+            })
+
+        },
+
         getUserGroups : function (id) {
             return $http(
                 {
@@ -79,7 +101,41 @@ angular.module('app').service('userGroupService', function ($http, $q, $log) {
 
             })
         },
-        
+        getGroup: function (id) {
+            return $http(
+                {
+                    method: 'GET',
+                    url: path + id,
+                    responseType: "application/json"
+
+
+                }).then(function (response) {
+                    return response.data;
+                }
+            )
+
+        },
+        addExamineForm : function (minimum, maximum, minimumToPass, title, description, passDate) {
+            return $http(
+                {
+                    method : 'POST',
+                    url : ex_path + 'saveExamineForm',
+                    responseType: "application/json",
+                    data : {
+                        minimum : minimum,
+                        maximum : maximum,
+                        minimumToPass : minimumToPass,
+                        title : title,
+                        description : description,
+                        passDate : passDate
+                    }
+                }
+            ).then(function (response) {
+                return response.data;
+
+            })
+        },
+
         getUserClassDates : function (userId, startDate, endDate) {
             return $http(
                 {
@@ -138,6 +194,55 @@ angular.module('app').service('userGroupService', function ($http, $q, $log) {
                 return response.data;
 
             })
+        },
+
+        addInstance: function (score, exam_id, id ) {
+            return $http(
+                {
+                    method : 'POST',
+                    url : ex_path + 'instance/save',
+                    responseType: "application/json",
+                    data : {
+                        score : score,
+                        examineForm : {
+                            id: exam_id
+                        },
+                        user : {
+                            id : id
+                        }
+                    }
+                }
+            ).then(function (response) {
+                return response.data;
+
+            })
+
+        },
+        loadAllExamine : function () {
+            return $http(
+                {
+                    method : 'GET',
+                    url : ex_path,
+                    responseType : "application/json"
+                }
+            ).then(function (response) {
+                return response.data;
+
+            })
+
+        },
+        getUserMarks : function (id) {
+            return $http(
+                {
+                    method: 'GET',
+                    url : ex_path + 'instance/' + id,
+                    responseType : "application/json"
+                }
+            ).then(function (response) {
+                return response.data;
+
+            })
+
         }
     }
 });

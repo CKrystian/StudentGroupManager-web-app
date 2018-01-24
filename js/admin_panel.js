@@ -48,9 +48,12 @@ app.config(function($routeProvider) {
         })
         .when("/class_dates/add", {
             templateUrl: "addClassDates.html"
-    })
-        .when("edit_faculty", {
-            templateUrl : "edit_faculty.html"
+        })
+        .when("/group_details/:id", {
+            templateUrl: "group_details.html"
+        })
+        .when("/examineForms", {
+            templateUrl: "examineForms.html"
         })
         .when("/class_dates/", {
             templateUrl: "userClassDates.html"
@@ -58,6 +61,13 @@ app.config(function($routeProvider) {
         .when("/class_dates/:id", {
             templateUrl: "classDateDetails.html"
         })
+        .when("/marks/:id", {
+            templateUrl: "marks.html"
+        })
+        .when("/my_marks", {
+            templateUrl: "my_marks.html"
+        })
+
     ;
 
 });

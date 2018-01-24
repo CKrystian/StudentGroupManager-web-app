@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../OSMP-service-develop/OSMP-Service.iml" filepath="$PROJECT_DIR$/../OSMP-service-develop/OSMP-Service.iml" />
+      <module fileurl="file://$USER_HOME$/Documents/OSMP-service-develop/OSMP-Service (1).iml" filepath="$USER_HOME$/Documents/OSMP-service-develop/OSMP-Service (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/OSMP-web-application-master.iml" filepath="$PROJECT_DIR$/.idea/OSMP-web-application-master.iml" />
     </modules>
   </component>

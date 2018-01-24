@@ -32,5 +32,13 @@ angular.module('app').controller('userGroupController',
                     }
                     );
                 }
-             $scope.loadUsers();
+            $scope.loadUsers();
+            $scope.addExamineForm = function () {
+                userGroupService.addExamineForm($scope.minimum,$scope.maximum, $scope.minimumToPass, $scope.title, $scope.description, $scope.passDate).then(function (response){
+                    $log.info(response);
+                    alert("Pomyślnie dodano");
+
+                })
+
+            }
         }]);

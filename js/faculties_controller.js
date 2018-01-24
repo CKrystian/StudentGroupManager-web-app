@@ -1,6 +1,6 @@
 angular.module('app').controller('facultiesController',
-    ['$scope', '$location' , 'facultiesService','$mdDialog', '$window',
-        function ($scope, $location, facultiesService, $mdDialog, $Window) {
+    ['$scope', '$location' , 'facultiesService','$mdDialog',
+        function ($scope, $location, facultiesService, $mdDialog) {
 
             $scope.data;
 
@@ -43,7 +43,7 @@ angular.module('app').controller('facultiesController',
             $scope.edit = function () {
                 facultiesService.edit($scope.id, $scope.code, $scope.name, $scope.type).then(function (resp) {
                     $log.info(resp);
-                    window.location.href = "admin_panel.html#/faculties";
+
 
 
 
@@ -69,7 +69,7 @@ angular.module('app').controller('facultiesController',
                     $scope.code = code;
                     $scope.type = type;
                     $scope.edit();
-
+                    window.location.href = "#/faculties";
                 }, function() {
                     $scope.status = 'You didn\'t name your dog.';
                 });

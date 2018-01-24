@@ -1,0 +1,53 @@
+<div data-ng-controller="userGroupController">
+    <div class="well">
+        <h2>Forma zaliczenia </h2>
+        <form name="form">
+            <div class="form-group">
+
+                <md-input-container class="md-block">
+                    <label>Grupa</label>
+                    <md-select  ng-model="groupId" name="select" required />
+                        <md-option ng-repeat="group in groups" value="{{group.id}}"> {{group.name}}</md-option>
+                    </md-select>
+                    <div ng-messages="form-group.code.$error">
+                        <div ng-message="required">This is required.</div>
+                    </div>
+                </md-input-container>
+                <!--<span ng-show="form.code.$dirty && form.code.$error.required" class="help-block">Code is required</span>-->
+            </div>
+            <div class="form-group">
+                <md-input-container class="md-block">
+                    <label>Minimum punktów</label>
+                    <input type="number" name="name" id="min" class="form-control" ng-model="minimum" required />
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label>Maximum punktów</label>
+                    <input type="number" name="name" id="max" class="form-control" ng-model="maximum" required />
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label>Punktów do zaliczenia</label>
+                    <input type="number" name="name" id="maxtopass" class="form-control" ng-model="minimumToPass" required />
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label>Nazwa</label>
+                    <input type="text" name="name" id="title" class="form-control" ng-model="title" required />
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label>Opis</label>
+                    <input type="text" name="name" id="description" class="form-control" ng-model="description" required />
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label>Data zaliczenia</label>
+                    <input type="date" name="name" id="date" class="form-control" ng-model="passDate" required />
+                </md-input-container>
+            </div>
+
+            <div class="form-actions">
+                <md-button class="md-raised md-primary" ng-disabled="form.$invalid || dataLoading"  data-ng-click="addExamineForm()" >Dodaj</md-button>
+                <img ng-if="dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="/>
+
+            </div>
+        </form>
+    </div>
+
+</div>

@@ -13,7 +13,7 @@ angular.module('app').service('menuService', function ($http, $q, $log, $cookies
                 url: path,
                 responseType: "application/json",
                 headers : {
-                    'Authorization' : 'Basic ' + $cookies.get('credentials')
+                    'Authorization' : $cookies.get('credentials')
                 }
             }).then(function (response) {
                 return response.data;

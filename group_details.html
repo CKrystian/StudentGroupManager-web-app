@@ -1,0 +1,14 @@
+<div class="well" data-ng-controller="detailsController">
+    <h2>Szczegóły grup</h2>
+    <h4>Id grupy : <span> {{data.id}} </span></h4>
+    <h4>Nazwa : {{data.name}}</h4>
+    <h4>Nazwa przedmiotu : {{data.module.name}}</h4>
+    <h4>Nazwa kierunku : {{data.module.faculty.name}}</h4>
+    <h4> Uczniowie :
+        <span ng-repeat="x in data.members">
+            <md-button md-no-ink class="md-primary" href="#/marks/{{x.id}}">{{x.firstName}} {{x.lastName}} , </md-button>
+        </span>
+    </h4>
+    <h4>Forma zaliczenia : {{data.exmineForms.title}}</h4>
+
+</div>

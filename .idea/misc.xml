@@ -2,11 +2,13 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../OSMP-service-develop" />
+    <file type="web" url="file://$USER_HOME$/Documents/OSMP-service-develop" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/../OSMP-service-develop/pom.xml" />
+        <option value="$USER_HOME$/Documents/OSMP-service-develop/pom.xml" />
       </list>
     </option>
   </component>

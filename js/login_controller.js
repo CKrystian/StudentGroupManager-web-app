@@ -12,17 +12,18 @@ angular.module('app').controller('LoginController',
                 loginService.login($scope.username,$scope.password).then(function (response) {
                     $log.info(response);
                     var authdata = btoa($scope.username + ":" + $scope.password);
-                    $cookies.put('id',response.id);
-                    $cookies.put('credentials',authdata);
+
+                    $cookies.put('userId',response.id);
+                    $cookies.put('credentials','Basic ' + authdata);
 
                     delete $rootScope.message;
-                    $http.defaults.headers.common['Authorization'] = 'Basic ' + authdata;
+                    $http.defaults.headers.common['Authorization'] =  authdata;
                     var testt = isCurrentUserAdmin(response);
                     $scope.loading();
                     if(isCurrentUserAdmin(response)) {
                         window.location.href = "admin_panel.html#/users";
                     } else {
-                        window.location.href = "admin_panel.html#/users";
+                        window.location.href = "admin_panel.html#/class_dates";
                     }
 
                 }, function (error) {
